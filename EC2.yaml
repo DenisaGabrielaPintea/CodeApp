@@ -8,7 +8,7 @@ Resources:
       Tags:
         - Key: "key1"
           Value: "value1"
-MyApplicationRepository:
+  MyApplicationRepository:
     Type: AWS::ECR::Repository
     Properties:
       RepositoryName: adunare-repo
