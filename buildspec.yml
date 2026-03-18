@@ -4,8 +4,8 @@ phases:
   pre_build:
     commands:
       - echo Logare in Amazon ECR...
-      - aws ecr get-login-password --region $AWS_DEFAULT_REGION | docker login --username AWS --password-stdin $AWS_ACCOUNT_ID.dkr.ecr.$AWS_DEFAULT_REGION.amazonaws.com
-      - REPOSITORY_URI=$AWS_ACCOUNT_ID.dkr.ecr.$AWS_DEFAULT_REGION.amazonaws.com/adunare-repo
+      - aws ecr get-login-password --region eu-central-1 | docker login --username AWS --password-stdin 029139774173.dkr.ecr.eu-central-1.amazonaws.com
+      - REPOSITORY_URI=029139774173.dkr.ecr.eu-central-1.amazonaws.com/adunare-repo
       - IMAGE_TAG=$(echo $CODEBUILD_RESOLVED_SOURCE_VERSION | cut -c 1-7)
   build:
     commands:
