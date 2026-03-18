@@ -24,7 +24,7 @@ HTML_TEMPLATE = '''
             <button type="submit">Adună</button>
         </form>
         {% if rezultat is not none %}
-            <h3>Rezultat: {{ rezultat }}</h3>
+            <h3>Rezultat!: {{ rezultat }}</h3>
         {% endif %}
     </div>
 </body>
