@@ -1,0 +1,11 @@
+Resources:
+  MyInstance:
+    Type: AWS::EC2::Instance
+    Properties:
+      ImageId: ami-04ecb6cf1e91a14b0
+      InstanceType: t3.micro
+      SubnetId: subnet-019d455add97373b1
+      Tags:
+        - Key: "key1"
+          Value: "value1"
+  
