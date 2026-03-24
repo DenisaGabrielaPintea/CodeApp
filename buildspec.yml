@@ -21,9 +21,10 @@ phases:
       - echo Se urcă imaginea în ECR...
       - docker push $REPOSITORY_URI:latest
       - docker push $REPOSITORY_URI:$IMAGE_TAG
-      - echo Creare fișier de definiție pentru deployment (opțional)...
-      - printf '{"ImageURI":"%s"}' $REPOSITORY_URI:$IMAGE_TAG > imageDetail.json
+      - echo Crearea fisierului imagedefinitions.json pentru ECS...
+      # "name" trebuie sa fie exact numele containerului definit in Task Definition (ex: app-container)
+      - printf '[{"name":"Codeapp-container","imageUri":"%s"}]' $REPOSITORY_URI:$IMAGE_TAG > imagedefinitions.json
 
 artifacts:
   files:
-    - imageDetail.json
+    - imagedefinitions.json
