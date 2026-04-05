@@ -8,7 +8,8 @@ HTML_TEMPLATE = '''
 <head>
     <title>Calculator Docker</title>
     <style>
-        body { font-family: sans-serif; display: flex; justify-content: center; margin-top: 50px; background-color: #ff2347; }
+        body { font-family: sans-serif; display: flex; justify-content: center; margin-top: 50px; background-color: #23ffdb
+; }
         .box { background: white; padding: 30px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
         input { padding: 8px; margin: 5px; border: 1px solid #ccc; border-radius: 4px; }
         button { padding: 8px 15px; background: #28a745; color: white; border: none; border-radius: 4px; cursor: pointer; }
