@@ -21,7 +21,7 @@ HTML_TEMPLATE = """
     <div class="max-w-3xl w-full bg-[#1e293b] rounded-3xl shadow-2xl overflow-hidden border border-slate-700/50">
         <div class="bg-gradient-to-br from-indigo-500 to-purple-600 p-10 text-center">
             <h1 class="text-4xl font-extrabold text-white tracking-tight">Subnet Mask Calculator</h1>
-            <p class="text-indigo-100 mt-2 text-lg opacity-90">Professional IPv4 Networking Utility</p>
+            <p class="text-indigo-100 mt-2 text-lg opacity-90">IPv4 Networking Utility</p>
         </div>
         <div class="p-8 md:p-12">
             <form method="POST" class="space-y-6 mb-10">
