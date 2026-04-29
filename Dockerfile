@@ -1,5 +1,5 @@
 # Folosim o imagine oficială de Python
-FROM python:3.11-slim
+FROM public.ecr.aws/docker/library/python:3.11-slim
 
 # Setăm folderul de lucru în container
 WORKDIR /app
