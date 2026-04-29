@@ -1,18 +1,20 @@
-# Folosim o versiune ușoară de Python
-FROM python:3.9-slim
+# Folosim o imagine oficială de Python
+FROM python:3.11-slim
 
 # Setăm folderul de lucru în container
 WORKDIR /app
 
-# Copiem fișierul cu dependințe și le instalăm
+# Copiem fișierul de dependențe
 COPY requirements.txt .
+
+# Instalăm dependențele
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Copiem codul aplicației
-COPY Adunare.py .
+# Copiem restul codului (app.py)
+COPY . .
 
-# Expunem portul pe care rulează Flask
+# Expunem portul 5050
 EXPOSE 5050
 
-# Comanda care pornește aplicația
-CMD ["python", "Adunare.py"]
+# Comanda de pornire a aplicației
+CMD ["python", "app.py"]
