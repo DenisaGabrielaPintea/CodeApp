@@ -101,7 +101,7 @@ def index():
                 "cidr": f"/{mask_input}"
             }
         except Exception:
-            error = "Invalid input! Please check the IP and Subnet Mask."
+            error = "Invalid input! Please check the IP and Subnet Mask!"
 
     return render_template_string(HTML_TEMPLATE, result=result, error=error)
 
