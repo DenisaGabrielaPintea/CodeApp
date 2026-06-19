@@ -1,20 +1,24 @@
-# Folosim o imagine oficială de Python
+# We are using an official Python image
 FROM public.ecr.aws/docker/library/python:3.11-slim
 
-# Setăm folderul de lucru în container
+# Set the working folder in the container
 WORKDIR /app
 
-# Copiem fișierul de dependențe
+# Copy the dependencies file
 COPY requirements.txt .
 
-# Instalăm dependențele
+# Install the dependencies
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Copiem restul codului (app.py)
+# Copy the rest of the code (app.py)
 COPY . .
 
-# Expunem portul 5050
+# Expose port 5050
 EXPOSE 5050
 
-# Comanda de pornire a aplicației
+# Application startup command
 CMD ["python", "app.py"]
+
+
+
+
