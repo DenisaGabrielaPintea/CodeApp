@@ -17,7 +17,7 @@ HTML_TEMPLATE = """
         body { font-family: 'Inter', sans-serif; }
     </style>
 </head>
-<body class="bg-[#0f172a] text-slate-200 min-h-screen flex items-center justify-center p-4">
+<body class="bg-[#CECECE] text-slate-200 min-h-screen flex items-center justify-center p-4">
     <div class="max-w-3xl w-full bg-[#1e293b] rounded-3xl shadow-2xl overflow-hidden border border-slate-700/50">
         <div class="bg-gradient-to-br from-indigo-500 to-purple-600 p-10 text-center">
             <h1 class="text-4xl font-extrabold text-white tracking-tight">Subnet Mask Calculator</h1>

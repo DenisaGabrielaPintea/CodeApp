@@ -18,7 +18,3 @@ EXPOSE 5050
 
 # Application startup command
 CMD ["python", "app.py"]
-
-
-
-
