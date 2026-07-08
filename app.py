@@ -19,7 +19,7 @@ HTML_TEMPLATE = """
 </head>
 <body class="bg-[#0f172a] text-slate-200 min-h-screen flex items-center justify-center p-4">
     <div class="max-w-3xl w-full bg-[#1e293b] rounded-3xl shadow-2xl overflow-hidden border border-slate-700/50">
-        <div class="bg-gradient-to-br from-blue-500 to-teal-600 p-10 text-center">
+        <div class="bg-gradient-to-br from-indigo-500 to-purple-600 p-10 text-center">
             <h1 class="text-4xl font-extrabold text-white tracking-tight">Subnet Mask Calculator</h1>
             <p class="text-indigo-100 mt-2 text-lg opacity-90">IPv4 Networking Utility</p>
         </div>
@@ -37,7 +37,7 @@ HTML_TEMPLATE = """
                             class="w-full bg-[#0f172a] border border-slate-600 rounded-xl p-4 focus:ring-2 focus:ring-indigo-500 outline-none transition text-white placeholder-slate-500">
                     </div>
                 </div>
-                <button type="submit" class="w-full bg-red-500 hover:bg-red-600 text-white font-bold py-4 rounded-xl transition duration-300 transform hover:-translate-y-1 shadow-lg shadow-indigo-500/20">
+                <button type="submit" class="w-full bg-indigo-500 hover:bg-indigo-600 text-white font-bold py-4 rounded-xl transition duration-300 transform hover:-translate-y-1 shadow-lg shadow-indigo-500/20">
                     CALCULATE NETWORK DETAILS
                 </button>
             </form>
